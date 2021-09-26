@@ -58,7 +58,7 @@ function displayweather(param){
     console.log("executing");
     console.log(param);
     console.log(param.id);
-    fetch("http://api.openweathermap.org/data/2.5/weather?q="+param.id+"&appid=4c57ba119b7b59e6a53a607db3743960")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q="+param.id+"&appid=4c57ba119b7b59e6a53a607db3743960")
     .then(function(data1){
         return data1.json();
     })
